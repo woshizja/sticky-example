@@ -1,0 +1,224 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>sticky example by  zhaojun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html,
+  body {
+    margin: 0;
+    color: #333;
+  }
+
+  .top img {
+    width: 100%;
+  }
+
+  .wrap {
+    overflow: visible;
+  }
+
+  .top {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .top .title h2 {
+    font-size: 24px;
+  }
+
+  .top .title p {
+    font-size: 16px;
+  }
+
+  .mid {
+    position: -webkit-sticky;
+    position: sticky;
+
+    top: 0;
+    z-index: -1;
+    height: 500px;
+    background-image: url("http://png.clipart.me/graphics/thumbs/159/seamless-pattern-with-diagonal-wavy-stripes-repeating-background-with-waves-stylish-print_159409271.jpg");
+    background-size: 150px 150px;
+  }
+  .mid img {
+    width: 100%;
+  }
+  .content {
+    margin-top: -500px;
+    padding: 10px 10px 30px 10px;
+    background: linear-gradient(
+      180deg,
+      rgba(190, 50, 39, 0) 0%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .item {
+    width: 46%;
+    margin: 2%;
+    padding-bottom: 25.875%;
+  }
+
+  .i1 {
+    width: 90%;
+    padding-bottom: 50.625%;
+    background: #f76262;
+  }
+
+  .i2 {
+    background: #216583;
+  }
+
+  .i3 {
+    background: #65c0ba;
+  }
+
+  .i4 {
+    background: #cffdf8;
+    padding-bottom: 46%;
+  }
+  .i5 {
+    background: #ff7517;
+  }
+
+  .i6 {
+    background: #3e3939;
+  }
+
+  .i7 {
+    background: #2c2727;
+    padding-bottom: 80%;
+  }
+
+  .i8 {
+    padding-bottom: 50.625%;
+  }
+  .i9 {
+    width: 90%;
+    padding-bottom: 50.625%;
+    background: #aa96da;
+  }
+
+  .i10 {
+    background: #fcbad3;
+  }
+
+  .i11 {
+    background: #48466d;
+  }
+
+  .head {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px 10px;
+    background-color: #fff;
+    height: 70px;
+    line-height: 70px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-align: left;
+  }
+
+  .head:before {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 7px;
+    height: 70%;
+    background: #30983f;
+    content: "";
+  }
+
+  .head .head-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .head .head-svg .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .head .head-svg .desc {
+    font-size: 16px;
+  }
+
+  .head .head-svg .text-bg {
+    width: 100%;
+    height: 100%;
+    fill: url("#bg");
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="wrap">
+  <div class="top">
+  <img src="https://images.unsplash.com/photo-1470020618177-f49a96241ae7?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=45cede8f75359bf7f80b3863166b6a2d&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="">
+  <div class="head">
+    <svg class="head-svg">
+    <defs>
+        <clipPath id="clipPath">
+            <text x="10" y="30" class="title">Vol 12. Ultra China</text>
+            <text x="10" y="60" class="desc">超世代音乐节 2018北京站</text>
+        </clipPath>
+        <linearGradient id="bg" x1="0" y1="0%" x2="100%" y2="100%">
+				    <stop offset="0%" style="stop-color:#333;stopOpacity:1"></stop>
+				    <stop offset="100%" style="stop-color:#489cd4;stopOpacity:1">
+              <animate attributeName="stop-color" values="#489cd4;#e33;#489cd4" dur="6s" repeatCount="indefinite"></animate> 
+            </stop>
+				</linearGradient>
+    </defs>
+    <g style="clip-path: url(#clipPath);">
+        <rect x="0" y="0" class="text-bg"></rect>
+    </g>
+</svg>
+  </div>
+</div>
+<div class="mid center" style="height: 734px;"></div>
+  <div class="content center" style="margin-top: -734px;">
+    <h3>Keeps elements positioned as "fixed" or "relative" depending on how it appears in the viewport. As a result the element is "stuck" when necessary while scrolling.</h3>
+    <div class="list">
+      <div class="item i1"></div>
+      <div class="item i3"></div>
+      <div class="item i2"></div>
+      <div class="item i10"></div>
+      <div class="item i7"></div>
+      <div class="item i3"></div>
+      <div class="item i4"></div>
+      <div class="item i5"></div>
+      <div class="item i9"></div>
+      <div class="item i6"></div>
+      <div class="item i7"></div>
+      <div class="item i9"></div>
+      <div class="item i8"></div>
+      <div class="item i2"></div>
+      <div class="item i6"></div>
+      <div class="item i11"></div>
+      <div class="item i3"></div>
+    </div>
+  </div>
+</div>
+<script>
+  var h = window.innerHeight;
+  var midEle =document.querySelector('.mid');
+  midEle.style.height = h + 'px';
+  var ctnEle =document.querySelector('.content');
+  ctnEle.style.marginTop = -h + 'px';
+</script>
+
