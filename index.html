@@ -10,11 +10,8 @@
   }
 	
 video{
-  width: 100%;
+  width: 60%;
   height: auto;
-/*   touch-action: none; */
-/*   visibility: hidden; */
-  
 }
 
 button.h {
@@ -38,7 +35,7 @@ button.h {
 
 <h2>video 标签都加了autoplay，观察一下页面载入后有没有自动播放</h2>
 
-<a href="https://codepen.io/zhaojun/pen/wqJjMJ"><button class='reload-btn'>重新加载页面</button></a> <br/>
+<button class='reload-btn'>重新加载页面</button> <br/>
 
 <button class="click-play">click play</button> <br/>
 
@@ -52,10 +49,9 @@ button.h {
   占位
 </div>
 
-<video style='visibility: hidden' controls x5-video-player-type='h5' x5-video-player-fullscreen="true" id="testVideo2" webkit-playsinline playsinline x5-playsinline src='https://static.adcode.cn/20180808-zhihu-love/asset/video/men_single_0.mp4'></video>
+<video controls x5-video-player-type='h5' x5-video-player-fullscreen="true" id="testVideo2" webkit-playsinline playsinline x5-playsinline src='https://static.adcode.cn/20180808-zhihu-love/asset/video/men_single_0.mp4'></video>
 <script>
   document.querySelector(".reload-btn").addEventListener('click', e=>{
-  console.log(location)
   location.reload();
 });
 
